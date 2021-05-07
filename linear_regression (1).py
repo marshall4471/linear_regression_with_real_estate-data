@@ -50,7 +50,7 @@ df
 from sklearn.preprocessing import PolynomialFeatures
 
 poly = PolynomialFeatures(degree=2, include_bias=False)
-
+#if you change the poly degree to 1 you get an r2 score of 1.0
 x_new = poly.fit_transform(x)
 
 new_model = LinearRegression()
